@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Visualisasi</title>
+</head>
+<body>
+    <h1>Visualisasi</h1>
+    <div style="width: 800px;" id='x'> </div>
+</body>
+
+<!-- jquery,plotly.js,d3.js -->
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+<script src="https://d3js.org/d3.v5.min.js"></script>
+<script>
+    var chart = {{ plotJSON | safe}}
+    Plotly.plot('x',chart,{})
+
+</script>
+
+</html>

@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <style>
+    body{
+        background: url(static/img/pokemon1.png);
+        color: #fff;
+        background-size: cover;
+        height: 100%;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container {
+        width: 80%;
+        margin-top: 3%;
+
+    }
+
+    .panel {
+        border-radius: 0.8rem;
+        padding: 0.5rem;
+        margin-bottom: 1rem;
+        /* margin-left: 0.1rem; */
+    }
+    .panel.panel-blue {
+        /* border: 1px solid #0087ff; */
+        background-color: #ddedff;
+        color: #0087ff;
+    }
+    .panel.panel-yellow {
+        /* border: 1px solid #ffbd00; */
+        background-color: #fef0b2;
+        color: #ffbd00;
+    }
+    .panel.panel-pink {
+        /* border: 1px solid #f84f7f; */
+        background-color: #fad2e1;
+        color: #f84f7f;
+    }
+    .panel.panel-purple {
+        /* border: 1px solid #7f51f4; */
+        /* background-color: #dfccff; */
+        color: #7f51f4;
+    }
+    .panel.panel-green {
+        /* border: 1px solid #24a319; */
+        background-color: #b1ff9a;
+        color: #247719;
+    }
+    </style>
+    <title>Result</title>
+  </head>
+  <body>
+    <div class="container">
+        <!-- <form > -->
+            
+            <div class="panel panel-purple text-capitalize"><h1>Your Favorite Pokemon</h1></div>
+ 
+      
+              <br>
+              <div class="row row-cols-3">
+                <div class="panel panel-blue text-capitalize">
+                    <img src="{{image1}}" alt="" height="100" width="100">
+                    <h5>{{Name1}}</h5>
+                    <div class="row row-cols-3">
+                        <div class="panel panel-blue text-capitalize">{{Type1}}</div>
+                        <div class="panel panel-blue text-capitalize">Gen {{Gen1}}</div>
+                        <div class="panel panel-blue text-capitalize">{{Leg1}}</div>
+                    </div>
+                </div>
+              </div>
+            <br>
+            
+              
+                  <div class="panel panel-purple text-capitalize"><h1>Rekomendasi Pokemon</h1></div>
+                
+              
+              <br>
+            <div class="row row-cols-3">
+            <div class="panel panel-blue text-capitalize">
+                <img src="{{image2}}" alt="" height="100" width="100">
+                <h5>{{Name2}}</h5>
+                <div class="row row-cols-3">
+                    <div class="panel panel-blue text-capitalize">{{Type2}}</div>
+                    <div class="panel panel-blue text-capitalize">Gen {{Gen2}}</div>
+                    <div class="panel panel-blue text-capitalize">{{Leg2}}</div>
+                </div>
+            </div>
+            <div class="panel panel-blue text-capitalize">
+                <img src="{{image3}}" alt="" height="100" width="100">
+                <h5>{{Name3}}</h5>
+                <div class="row row-cols-3">
+                    <div class="panel panel-blue text-capitalize">{{Type3}}</div>
+                    <div class="panel panel-blue text-capitalize">Gen {{Gen3}}</div>
+                    <div class="panel panel-blue text-capitalize">{{Leg3}}</div>
+                </div>
+            </div>
+            <div class="panel panel-blue text-capitalize">
+                <img src="{{image4}}" alt="" height="100" width="100">
+                <h5>{{Name4}}</h5>
+                <div class="row row-cols-3">
+                    <div class="panel panel-blue text-capitalize">{{Type4}}</div>
+                    <div class="panel panel-blue text-capitalize">Gen {{Gen4}}</div>
+                    <div class="panel panel-blue text-capitalize">{{Leg4}}</div>
+                </div>
+            </div>
+            </div>
+            <br>
+            <div class="row row-cols-3">
+                <div class="panel panel-blue text-capitalize">
+                    <img src="{{image5}}" alt="" height="100" width="100">
+                    <h5>{{Name5}}</h5>
+                    <div class="row row-cols-3">
+                        <div class="panel panel-blue text-capitalize">{{Type5}}</div>
+                        <div class="panel panel-blue text-capitalize">Gen {{Gen5}}</div>
+                        <div class="panel panel-blue text-capitalize">{{Leg5}}</div>
+                    </div>
+                </div>
+                <div class="panel panel-blue text-capitalize">
+                    <img src="{{image6}}" alt="" height="100" width="100">
+                    <h5>{{Name6}}</h5>
+                    <div class="row row-cols-3">
+                        <div class="panel panel-blue text-capitalize">{{Type6}}</div>
+                        <div class="panel panel-blue text-capitalize">Gen {{Gen6}}</div>
+                        <div class="panel panel-blue text-capitalize">{{Leg6}}</div>
+                    </div>
+                </div>
+                <div class="panel panel-blue text-capitalize">
+                    <img src="{{image7}}" alt="" height="100" width="100">
+                    <h5>{{Name7}}</h5>
+                    <div class="row row-cols-3">
+                        <div class="panel panel-blue text-capitalize">{{Type7}}</div>
+                        <div class="panel panel-blue text-capitalize">Gen {{Gen7}}</div>
+                        <div class="panel panel-blue text-capitalize">{{Leg7}}</div>
+                    </div>
+                </div>
+                </div>
+            <a role="button" class="btn btn-success" href="/" ><i class="fa fa-arrow-left"></i> Kembali</a>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>
